@@ -1,4 +1,6 @@
-specVersion: 0.0.1
+specVersion: 0.0.2
+description: Gravatar for Ethereum
+repository: https://github.com/uncleGena/nftthegraph
 schema:
   file: ./schema.graphql
 dataSources:
@@ -8,9 +10,10 @@ dataSources:
     source:
       address: "0x37BF6c6731544D11985b08D5122348d8901Cc315"
       abi: ProfITNFT
+      startBlock: 24175980
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.2
+      apiVersion: 0.0.4
       language: wasm/assemblyscript
       entities:
         - Approval
