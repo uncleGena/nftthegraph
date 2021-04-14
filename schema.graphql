@@ -1,3 +1,16 @@
+scalar Bytes
+
+# type Query {
+#   token(id: ID!): TokenEntity!
+#   tokenEntities: [TokenEntity]!
+
+#   transferEntity(id: ID!): TransferEntity!
+#   transferEntities: [TransferEntity]!
+
+#   ownerEntity(id: ID!): OwnerEntity
+#   ownerEntities: [OwnerEntity]!
+# }
+
 type TransferEntity @entity {
   id: ID!
   from: OwnerEntity
