@@ -32,7 +32,7 @@ type TokenEntity @entity {
   id: ID!
   name: String
   symbol: String
-  tokenURI: String
+  tokenURI: String!
   approved: Bytes
   transfers: [TransferEntity!]! @derivedFrom(field: "token")
   owner: OwnerEntity
