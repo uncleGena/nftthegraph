@@ -92,6 +92,7 @@ export function handleTransfer(event: Transfer): void {
     token.owner = event.params.to.toHex()
     token.name = contract.name()
     token.symbol = contract.symbol()
+    token.block = event.block.number.toString()
     token.tokenURI = contract.tokenURI(event.params.tokenId)
     token.save()
   }
